@@ -177,6 +177,13 @@ const [initialValues, setInitialValues] = useState<any>(null)
                   </FormControl>
                   )}
                 </Field>
+                <Field name="image">
+                  {({field}:any) => (
+                    <FormControl>
+                      <Input {...field} type="file" placeholder="image" />
+                    </FormControl>
+                  )}
+                </Field>
                 </Stack>
           </ModalBody>
           <ModalFooter>
