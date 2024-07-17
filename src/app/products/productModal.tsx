@@ -116,15 +116,8 @@ const [initialValues, setInitialValues] = useState<any>(null)
     }
   }
 
-  const getImage = (product:any) => {
-    const storage = getStorage(firebase_app)
-    const storageRef = ref(storage, `images/${product.id}`);
-
-    return getDownloadURL(product);
-  }
 
   useEffect(()=>{
-    console.log("prodducot modal", product)
     if(product==null){
       setInitialValues({
         id:null,
@@ -141,7 +134,7 @@ const [initialValues, setInitialValues] = useState<any>(null)
         description: product.description,
         price: product.price,
         section: product.section,
-        image: getImage(product)
+        image: product.image
       })
     }
   }, [product])
@@ -207,7 +200,8 @@ const [initialValues, setInitialValues] = useState<any>(null)
                 <Field name="image">
                   {({field}:any) => (
                     <FormControl>
-                    <Input type="file" onChange={(e) => handleImageChange(e, setFieldValue)} />
+                      {product?.image && <img src={product.image} alt="Uploaded" style={{ maxWidth: '100px' }} />}
+                      <Input type="file"  onChange={(e) => handleImageChange(e, setFieldValue)} />
                     </FormControl>
                   )}
                 </Field>
