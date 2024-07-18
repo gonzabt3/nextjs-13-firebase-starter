@@ -71,17 +71,20 @@ const Products = ({menu, onRefreshMenu}:any) => {
       <CardBody>
         <Heading as='h2' size='md'>Productos</Heading>
       </CardBody>
-      <Button 
-        onClick={changeIsOpenModal}
-        marginLeft={5} color="orange" variant="solid" >
-        Nuevo Productos
-      </Button>
-      <Flex> 
+      <Flex direction={'column'}> 
+        <Button 
+          justifyContent={'center'}
+          margin={'2'}
+          width={['45%','30%']}
+          onClick={changeIsOpenModal}
+          color="orange" variant="solid" >
+          Nuevo Productos
+        </Button>
         {(products.length > 0) ? 
-        <List width={'100%'}>
+        <List display="flex" flexDirection={'column'}>
           {products.map((product:any) => (
-          <ListItem key={product.id}>
-            <Product onEdit={editProduct} onDelete={deleteProduct} product={product}/> 
+          <ListItem  margin={2} display="flex" width={'100%'} justifyContent={'center'} key={product.id}>
+            <Product width={['90%','90%','70%','70%']}  onEdit={editProduct} onDelete={deleteProduct} product={product}/> 
           </ListItem>
           ))} 
         </List> :

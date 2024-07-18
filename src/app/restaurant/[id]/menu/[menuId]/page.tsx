@@ -113,15 +113,15 @@ export default function Page() {
                 <GridItem colStart={3} rowSpan={5} colSpan={1}>
                     <Image src={menu.qrCode} alt='qrCode' />
                 </GridItem>
-                <GridItem colSpan={4} bg='#CFEDFB'>
+                <GridItem colSpan={4}>
                   <CardBody>
                     <Heading as='h2' size='md'>Secciones</Heading>
                   </CardBody>
                 </GridItem>
-                <GridItem colSpan={3} bg='yellow:200' >
+                <GridItem colSpan={3} >
                   <Sections menu={menu} onGetMenu={refreshMenu}/>
                 </GridItem>
-                <GridItem colSpan={4} bg='tomato' >
+                <GridItem colSpan={4}  >
                   <Products menu={menu} onRefreshMenu={refreshMenu} />
                 </GridItem>
               </Grid>
