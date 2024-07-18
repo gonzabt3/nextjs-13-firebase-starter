@@ -1,8 +1,9 @@
 import firebase_app from '@/firebase/config';
-import { Button, FormControl, Input, Textarea } from '@chakra-ui/react';
+import { Button, FormControl, Input, Flex } from '@chakra-ui/react';
 import { doc, getFirestore, updateDoc } from 'firebase/firestore';
 import { Field, Form, Formik } from 'formik';
-import React, { use, useEffect, useState } from 'react';
+import React from 'react';
+
 
 const FormMenu = ({menu, menuId}:any) => {
 
@@ -20,7 +21,7 @@ const FormMenu = ({menu, menuId}:any) => {
   };
   
   return (
-    <div>
+    <Flex marginLeft={2}>
         <Formik
         initialValues={{ 
           name: menu.name,
@@ -31,21 +32,21 @@ const FormMenu = ({menu, menuId}:any) => {
       >
           {(formik) => (
 
-        <Form>
-              <FormControl>
+        <Form >
+              <FormControl margin={2}>
                 <Field as={Input}  name="name" type="text" placeholder="Nombre" />
               </FormControl>
-              <FormControl>
+              <FormControl margin={2}>
                 <Field as={Input}  name="description" placeholder="Descripcion"/>
               
               </FormControl>
-          <Button type='submit' color="orange" variant={'solid'}>
+          <Button margin={2} type='submit' color="orange" variant={'solid'}>
             Guardar
           </Button>
         </Form>
           )}
       </Formik>
-    </div>
+    </Flex>
   );
 };
 

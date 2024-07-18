@@ -13,9 +13,9 @@ const Section = ({section, onEdit, onDelete}:any) => {
 
   return(
     <>
-      <Box borderRadius='md' w='50%' px={4} border="1px solid grey" >
-        <Flex>
-          <Heading margin={1} size={'md'}>{section.name}</Heading>
+      <Box borderRadius='md' w={['100%','50%']} px={1} border="1px solid grey" >
+        <Flex margin={1} >
+          <Heading alignContent={'center'} margin={1} size={'md'}>{section.name}</Heading>
           <Spacer/>
           <IconButton onClick={() => editHandle()} aria-label="Editar" margin='1' size={'sm'} icon={<EditIcon />} />
           <IconButton onClick={() => handleDelete()} aria-label="Close" margin='1' size={'sm'} icon={<CloseIcon />} />

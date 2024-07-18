@@ -47,12 +47,18 @@ const Sections = ({menu, onGetMenu}:any) => {
 
   return(
     <>
-      <Button onClick={openModal}>Agregar Seccion</Button>
-      <Flex>        
-        <List width={'100%'}>
+      <Flex direction={'column'}>   
+          <Button
+            justifyContent={'center'}
+            margin={'2'}
+            width={['45%','30%']}
+            onClick={openModal}>
+              Agregar Seccion
+          </Button>      
+        <List  display="flex" flexDirection={'column'}>
           {menu.sections.map((section:any) => (
-          <ListItem key={section.id}>
-            <Section onEdit={edit} onDelete={deleteSection} section={section}/> 
+          <ListItem margin={2} display="flex" width={'100%'} justifyContent={'center'} key={section.id}>
+            <Section width={['90%','90%','70%','70%']}  onEdit={edit} onDelete={deleteSection} section={section}/> 
           </ListItem>
           ))} 
         </List>

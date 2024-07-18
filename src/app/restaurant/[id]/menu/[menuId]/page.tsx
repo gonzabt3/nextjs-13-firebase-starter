@@ -102,26 +102,26 @@ export default function Page() {
                 templateColumns='repeat(3, 1fr)'
                 gap={4}
               >
-                <GridItem rowSpan={1} colSpan={3} bg='tomato' >
+                <GridItem rowSpan={5} colSpan={3} >
                   <CardHeader>
                     <Heading as='h2' size='md'>Menu</Heading>
                   </CardHeader>
                 </GridItem>
-                <GridItem colStart={1} rowSpan={1} colSpan={1} bg='papayawhip' >
+                <GridItem colStart={1} rowSpan={5} colSpan={[2]}>
                   <FormMenu menu={menu} menuId={menuId} />
                 </GridItem>
-                <GridItem colStart={3} rowSpan={1} colSpan={1} bg='papayawhip'>
+                <GridItem colStart={3} rowSpan={5} colSpan={1}>
                     <Image src={menu.qrCode} alt='qrCode' />
                 </GridItem>
-                <GridItem colSpan={4} bg='tomato'>
+                <GridItem colSpan={4}>
                   <CardBody>
                     <Heading as='h2' size='md'>Secciones</Heading>
                   </CardBody>
                 </GridItem>
-                <GridItem colSpan={4} bg='yellow:200' >
+                <GridItem colSpan={3} >
                   <Sections menu={menu} onGetMenu={refreshMenu}/>
                 </GridItem>
-                <GridItem colSpan={4} bg='tomato' >
+                <GridItem colSpan={4}  >
                   <Products menu={menu} onRefreshMenu={refreshMenu} />
                 </GridItem>
               </Grid>
