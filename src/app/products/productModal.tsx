@@ -144,7 +144,7 @@ const [initialValues, setInitialValues] = useState<any>(null)
     close();
   }
 
-  const handleImageChange = (e, setFieldValue) => {
+  const handleImageChange = (e:any, setFieldValue:any) => {
     setFieldValue('image', e.currentTarget.files[0]);
   };
   return (
