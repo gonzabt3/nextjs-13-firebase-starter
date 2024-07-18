@@ -17,7 +17,12 @@ const Section = ({section} : any) => {
 
   return (
     <div>
-      <Heading size="md">{section.name}</Heading>
+      <Heading 
+        margin={2} 
+        style={{textDecoration: 'underline'}} 
+        size="md">
+        {section.name}
+      </Heading>
         { products() }
     </div>
   );

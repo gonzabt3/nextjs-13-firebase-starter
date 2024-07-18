@@ -134,7 +134,7 @@ const [initialValues, setInitialValues] = useState<any>(null)
         description: product.description,
         price: product.price,
         section: product.section,
-        image: product.image
+        image: product.image ? product.image : null
       })
     }
   }, [product])
