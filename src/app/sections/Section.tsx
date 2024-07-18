@@ -13,7 +13,7 @@ const Section = ({section, onEdit, onDelete}:any) => {
 
   return(
     <>
-      <Box borderRadius='md' w='50%' px={1} border="1px solid grey" >
+      <Box borderRadius='md' w={['100%','50%']} px={1} border="1px solid grey" >
         <Flex margin={1} >
           <Heading alignContent={'center'} margin={1} size={'md'}>{section.name}</Heading>
           <Spacer/>

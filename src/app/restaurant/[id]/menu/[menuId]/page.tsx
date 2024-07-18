@@ -107,7 +107,7 @@ export default function Page() {
                     <Heading as='h2' size='md'>Menu</Heading>
                   </CardHeader>
                 </GridItem>
-                <GridItem colStart={1} rowSpan={5} colSpan={1}>
+                <GridItem colStart={1} rowSpan={5} colSpan={[2]}>
                   <FormMenu menu={menu} menuId={menuId} />
                 </GridItem>
                 <GridItem colStart={3} rowSpan={5} colSpan={1}>
