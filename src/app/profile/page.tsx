@@ -1,5 +1,5 @@
 'use client'
-import { Box, Card, GridItem, Heading } from '@chakra-ui/react';
+import { Box, Button, Card, GridItem, Heading } from '@chakra-ui/react';
 import react, { useEffect, useRef } from 'react';
 
 const Profile = () => {
@@ -10,6 +10,12 @@ const Profile = () => {
       refScreen.current.style.maxHeight = `${window.innerHeight}px`;
     }
   }, []);
+
+  const pay = () => {
+    console.log('mercadopago')
+    fetch('http://127.0.0.1:5001/gomenu-test1/us-central1/helloWorld')
+  }
+
   return (
     <div ref={refScreen} >
       <GridItem area={'nav'}  rowSpan={7} colSpan={5}>
@@ -21,6 +27,9 @@ const Profile = () => {
             <Heading size={'sm'}>Pagos</Heading>
           </Box>
           Plan: Premium
+          <Button
+            onClick={pay}
+          >mercadopago</Button>
         </Card>
       </GridItem>
     </div>
