@@ -32,10 +32,24 @@ menus
     }
   ]
 
-qr code---
-create menus
-create qr code using cloud function, url -> menu/Id
-    needs to create a new page and extact all the component from [restaurantName]/page 
-store the qr in firestore or something like that.
+----suscriptions-------
+todo
+  el token de acceso a la api no puede estar en el back
 
 
+mepa---
+codea que el cliente solicite un token para hacer la transacion
+con ese token crear un suscripcion a un plan
+
+hacer una tabla de suscripcciones
+  userId
+  suscriptionsId
+
+si no tiene suscripcion vigente mostrar el coso de mercado pago
+
+implementar formulario para genera el card_token
+ con checkout bricks
+
+ crear el plan
+
+ https://github.com/mercadopago/sdk-react

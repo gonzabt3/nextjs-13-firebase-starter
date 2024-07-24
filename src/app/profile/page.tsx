@@ -1,7 +1,10 @@
 'use client'
+import React, { useEffect, useRef } from 'react';
 import { Box, Button, Card, GridItem, Heading } from '@chakra-ui/react';
-import react, { useEffect, useRef } from 'react';
+import { CardPayment } from '@mercadopago/sdk-react';
+import { initMercadoPago } from '@mercadopago/sdk-react';
 
+initMercadoPago('TEST-28d1010f-acc4-474a-992d-861df9701807');
 const Profile = () => {
   const refScreen : any = useRef(null);
 
@@ -11,8 +14,8 @@ const Profile = () => {
     }
   }, []);
 
-  const pay = () => {
-    console.log('mercadopago')
+  const pay = async (params : any) => {
+    console.log('params', params)
     fetch('http://127.0.0.1:5001/gomenu-test1/us-central1/helloWorld')
   }
 
@@ -30,6 +33,10 @@ const Profile = () => {
           <Button
             onClick={pay}
           >mercadopago</Button>
+          <CardPayment
+            initialization={{ amount: 100 }}
+            onSubmit={pay}
+          />
         </Card>
       </GridItem>
     </div>
