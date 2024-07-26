@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import { Box, Button, Card, GridItem, Heading } from '@chakra-ui/react';
 import { CardPayment } from '@mercadopago/sdk-react';
 import { initMercadoPago } from '@mercadopago/sdk-react';
+import axios from 'axios';
 
 initMercadoPago('TEST-28d1010f-acc4-474a-992d-861df9701807');
 const Profile = () => {
@@ -13,6 +14,18 @@ const Profile = () => {
       refScreen.current.style.maxHeight = `${window.innerHeight}px`;
     }
   }, []);
+
+  useEffect(() => {
+    const userId = 1
+    const rootPath = "https://suscriptions-6e5dzo5roa-uc.a.run.app";  
+    axios.get(rootPath+'/suscriptions?userId='+userId, )
+    .then(response => {
+      console.log(response.data);
+    })
+    .catch(error => {
+      console.error(error);
+    });
+  })
 
   const pay = async (params : any) => {
     console.log('params', params)
