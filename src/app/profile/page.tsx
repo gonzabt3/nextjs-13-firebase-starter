@@ -28,8 +28,19 @@ const Profile = () => {
   })
 
   const pay = async (params : any) => {
-    console.log('params', params)
-    fetch('http://127.0.0.1:5001/gomenu-test1/us-central1/helloWorld')
+    const userId = 1
+    const rootPath = "https://suscriptions-6e5dzo5roa-uc.a.run.app";  
+    const payload ={
+      userId: userId,
+      ...params
+    }
+    axios.post(rootPath+'/pay', payload )
+    .then(response => {
+      console.log(response.data);
+    })
+    .catch(error => {
+      console.error(error);
+    });
   }
 
   return (

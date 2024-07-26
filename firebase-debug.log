@@ -1,0 +1,228 @@
+[debug] [2024-07-26T03:40:29.175Z] ----------------------------------------------------------------------
+[debug] [2024-07-26T03:40:29.177Z] Command:       /opt/homebrew/Cellar/node/22.5.1/bin/node /opt/homebrew/bin/firebase emulators:start --only functions --debug
+[debug] [2024-07-26T03:40:29.177Z] CLI Version:   13.12.0
+[debug] [2024-07-26T03:40:29.177Z] Platform:      darwin
+[debug] [2024-07-26T03:40:29.177Z] Node Version:  v22.5.1
+[debug] [2024-07-26T03:40:29.177Z] Time:          Fri Jul 26 2024 00:40:29 GMT-0300 (Argentina Standard Time)
+[debug] [2024-07-26T03:40:29.177Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-26T03:40:29.223Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-26T03:40:29.223Z] > authorizing via signed-in user (gonzalo.muscolo@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-07-26T03:40:29.388Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-07-26T03:40:29.388Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-07-26T03:40:29.391Z] [hub] writing locator at /var/folders/yc/gh_sc44d4hb_rmq6p8vwd71m0000gn/T/hub-gomenu-test1.json
+[debug] [2024-07-26T03:40:29.512Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-07-26T03:40:29.515Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-07-26T03:40:29.515Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2024-07-26T03:40:29.517Z] defaultcredentials: writing to file /Users/gonzalomuscolo/.config/firebase/gonzalo_muscolo_gmail.com_application_default_credentials.json
+[debug] [2024-07-26T03:40:29.521Z] Setting GAC to /Users/gonzalomuscolo/.config/firebase/gonzalo_muscolo_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/gonzalomuscolo/.config/firebase/gonzalo_muscolo_gmail.com_application_default_credentials.json"}}
+[debug] [2024-07-26T03:40:29.522Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gomenu-test1/adminSdkConfig [none]
+[debug] [2024-07-26T03:40:30.052Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gomenu-test1/adminSdkConfig 200
+[debug] [2024-07-26T03:40:30.052Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gomenu-test1/adminSdkConfig {"projectId":"gomenu-test1","databaseURL":"https://gomenu-test1-default-rtdb.firebaseio.com","storageBucket":"gomenu-test1.appspot.com","locationId":"southamerica-east1"}
+[debug] [2024-07-26T03:40:30.065Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-07-26T03:40:30.065Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-07-26T03:40:30.065Z] Starting Emulator UI with command {"binary":"node","args":["/Users/gonzalomuscolo/.cache/firebase/emulators/ui-v1.12.1/server/server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/gonzalomuscolo/.cache/firebase/emulators/ui-v1.12.1/server/server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-07-26T03:40:30.164Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-07-26T03:40:30.164Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/gonzalomuscolo/Development/nextjs-13-firebase-starter/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/gonzalomuscolo/Development/nextjs-13-firebase-starter/functions\" for Cloud Functions..."}}
+[debug] [2024-07-26T03:40:30.274Z] Validating nodejs source
+[debug] [2024-07-26T03:40:31.276Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-07-26T03:40:31.277Z] Building nodejs source
+[debug] [2024-07-26T03:40:31.277Z] Failed to find version of module node: reached end of search path /Users/gonzalomuscolo/Development/nextjs-13-firebase-starter/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "22". Using node@22 from host. 
+[debug] [2024-07-26T03:40:31.278Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-07-26T03:40:31.281Z] Found firebase-functions binary at '/Users/gonzalomuscolo/Development/nextjs-13-firebase-starter/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8530
+
+[debug] [2024-07-26T03:40:31.504Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"},"suscriptions":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"suscriptions"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld, suscriptions. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld, suscriptions."}}
+[info] ✔  functions[us-central1-helloWorld]: http function initialized (http://127.0.0.1:5001/gomenu-test1/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/gomenu-test1/us-central1/helloWorld)."}}
+[info] ✔  functions[us-central1-suscriptions]: http function initialized (http://127.0.0.1:5001/gomenu-test1/us-central1/suscriptions). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/gomenu-test1/us-central1/suscriptions)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-07-26T03:42:00.354Z] Received signal SIGINT (Ctrl-C) 1
+[info]  
+[info] i  emulators: Received SIGINT (Ctrl-C) for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGINT (Ctrl-C) signal again to stop right now. 
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[warn] ⚠  Emulator UI has exited upon receiving signal: SIGINT 
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  eventarc: Stopping Eventarc Emulator {"metadata":{"emulator":{"name":"eventarc"},"message":"Stopping Eventarc Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
+[debug] [2024-07-26T03:42:54.908Z] ----------------------------------------------------------------------
+[debug] [2024-07-26T03:42:54.910Z] Command:       /opt/homebrew/Cellar/node/22.5.1/bin/node /opt/homebrew/bin/firebase emulators:start
+[debug] [2024-07-26T03:42:54.910Z] CLI Version:   13.12.0
+[debug] [2024-07-26T03:42:54.910Z] Platform:      darwin
+[debug] [2024-07-26T03:42:54.910Z] Node Version:  v22.5.1
+[debug] [2024-07-26T03:42:54.910Z] Time:          Fri Jul 26 2024 00:42:54 GMT-0300 (Argentina Standard Time)
+[debug] [2024-07-26T03:42:54.911Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-26T03:42:54.956Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-26T03:42:54.956Z] > authorizing via signed-in user (gonzalo.muscolo@gmail.com)
+[debug] [2024-07-26T03:42:55.053Z] openjdk version "22.0.2" 2024-07-16
+
+[debug] [2024-07-26T03:42:55.054Z] OpenJDK Runtime Environment Homebrew (build 22.0.2)
+OpenJDK 64-Bit Server VM Homebrew (build 22.0.2, mixed mode, sharing)
+
+[debug] [2024-07-26T03:42:55.060Z] Parsed Java major version: 22
+[info] i  emulators: Starting emulators: functions, firestore {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, firestore"}}
+[debug] [2024-07-26T03:42:55.320Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-07-26T03:42:55.320Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-07-26T03:42:55.320Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-07-26T03:42:55.320Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-07-26T03:42:55.322Z] [hub] writing locator at /var/folders/yc/gh_sc44d4hb_rmq6p8vwd71m0000gn/T/hub-gomenu-test1.json
+[debug] [2024-07-26T03:42:55.426Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-07-26T03:42:55.426Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-07-26T03:42:55.426Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2024-07-26T03:42:55.427Z] defaultcredentials: writing to file /Users/gonzalomuscolo/.config/firebase/gonzalo_muscolo_gmail.com_application_default_credentials.json
+[debug] [2024-07-26T03:42:55.431Z] Setting GAC to /Users/gonzalomuscolo/.config/firebase/gonzalo_muscolo_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/gonzalomuscolo/.config/firebase/gonzalo_muscolo_gmail.com_application_default_credentials.json"}}
+[debug] [2024-07-26T03:42:55.431Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gomenu-test1/adminSdkConfig [none]
+[debug] [2024-07-26T03:42:55.936Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gomenu-test1/adminSdkConfig 200
+[debug] [2024-07-26T03:42:55.937Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gomenu-test1/adminSdkConfig {"projectId":"gomenu-test1","databaseURL":"https://gomenu-test1-default-rtdb.firebaseio.com","storageBucket":"gomenu-test1.appspot.com","locationId":"southamerica-east1"}
+[debug] [2024-07-26T03:42:55.954Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-07-26T03:42:55.954Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2024-07-26T03:42:55.954Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/Users/gonzalomuscolo/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.7.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","gomenu-test1","--rules","/Users/gonzalomuscolo/Development/nextjs-13-firebase-starter/firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/Users/gonzalomuscolo/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.7.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"gomenu-test1\",\"--rules\",\"/Users/gonzalomuscolo/Development/nextjs-13-firebase-starter/firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2024-07-26T03:42:55.961Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-07-26T03:42:55.961Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-07-26T03:42:55.962Z] Starting Emulator UI with command {"binary":"node","args":["/Users/gonzalomuscolo/.cache/firebase/emulators/ui-v1.12.1/server/server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/gonzalomuscolo/.cache/firebase/emulators/ui-v1.12.1/server/server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-07-26T03:42:56.068Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-07-26T03:42:56.068Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/gonzalomuscolo/Development/nextjs-13-firebase-starter/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/gonzalomuscolo/Development/nextjs-13-firebase-starter/functions\" for Cloud Functions..."}}
+[debug] [2024-07-26T03:42:56.169Z] Validating nodejs source
+[debug] [2024-07-26T03:42:56.515Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-07-26T03:42:56.516Z] Building nodejs source
+[debug] [2024-07-26T03:42:56.516Z] Failed to find version of module node: reached end of search path /Users/gonzalomuscolo/Development/nextjs-13-firebase-starter/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "22". Using node@22 from host. 
+[debug] [2024-07-26T03:42:56.517Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-07-26T03:42:56.519Z] Found firebase-functions binary at '/Users/gonzalomuscolo/Development/nextjs-13-firebase-starter/functions/node_modules/.bin/firebase-functions'
+[debug] [2024-07-26T03:42:56.583Z] Jul 26, 2024 12:42:56 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 26, 2024 12:42:56 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2024-07-26T03:42:56.596Z] API endpoint: http://127.0.0.1:8080 {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://127.0.0.1:8080"}}
+[debug] [2024-07-26T03:42:56.596Z] 
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\nDev App Server is now running.\n\n"}}
+[info] Serving at port 8178
+
+[debug] [2024-07-26T03:42:56.733Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"helloWorld"},"suscriptions":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"suscriptions"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-07-26T03:42:57.573Z] Jul 26, 2024 12:42:57 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jul 26, 2024 12:42:57 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[info] ✔  functions: Loaded functions definitions from source: helloWorld, suscriptions. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: helloWorld, suscriptions."}}
+[info] ✔  functions[us-central1-helloWorld]: http function initialized (http://127.0.0.1:5001/gomenu-test1/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/gomenu-test1/us-central1/helloWorld)."}}
+[info] ✔  functions[us-central1-suscriptions]: http function initialized (http://127.0.0.1:5001/gomenu-test1/us-central1/suscriptions). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/gomenu-test1/us-central1/suscriptions)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Firestore │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 

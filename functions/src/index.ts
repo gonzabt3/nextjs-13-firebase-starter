@@ -11,6 +11,7 @@ import {onRequest} from "firebase-functions/v2/https";
 import * as logger from "firebase-functions/logger";
 import * as admin from "firebase-admin";
 import * as cors from "cors";
+import axios from "axios";
 
 const corsOptions = {
   origin: true,
@@ -43,5 +44,24 @@ export const suscriptions = onRequest((request, response) => {
         console.error(error);
         response.status(500).send(error.message);
       });
+  });
+});
+
+export const pay = onRequest((request, response) => {
+  corsMiddleware(request, response, () => {
+    const data = request.body;
+    const userId = 1
+    const rootPath = "https://suscriptions-6e5dzo5roa-uc.a.run.app";  
+    const payload ={
+      userId: userId,
+      ...data
+    }
+    axios.post(rootPath+'/pay', payload )
+    .then(response => {
+      console.log(response.data);
+    })
+    .catch(error => {
+      console.error(error);
+    });
   });
 });
