@@ -5,7 +5,7 @@ import { CardPayment } from '@mercadopago/sdk-react';
 import { initMercadoPago } from '@mercadopago/sdk-react';
 import axios from 'axios';
 
-initMercadoPago('TEST-28d1010f-acc4-474a-992d-861df9701807');
+initMercadoPago('APP_USR-5cadb7a0-b3cf-4da1-8490-d1a4ff48d49b');
 const Profile = () => {
   const refScreen : any = useRef(null);
 
@@ -29,7 +29,7 @@ const Profile = () => {
 
   const pay = async (params : any) => {
     const userId = 1
-    const rootPath = "https://suscriptions-6e5dzo5roa-uc.a.run.app";  
+    const rootPath = "http://127.0.0.1:5001/gomenu-test1/us-central1";  
     const payload ={
       userId: userId,
       ...params
